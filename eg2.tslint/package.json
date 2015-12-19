@@ -1,0 +1,73 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "513cf511-3894-4ee2-8c34-13ab83ddfd37",
+		"publisherId": "0b5821dc-b7ab-4fa0-bcee-c2add1d8f9db",
+		"publisherDisplayName": "egamma2",
+		"date": "2015-12-04T17:45:58.58Z"
+	},
+	"name": "tslint",
+	"description": "TSLint for Visual Studio Code",
+	"version": "0.5.4",
+	"publisher": "eg2",
+	"icon": "TSLint_icon.svg",
+	"galleryBanner": {
+		"color": "#5c2d91",
+		"theme": "dark"
+	},
+	"homepage": "https://github.com/Microsoft/vscode-tslint/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-tslint.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Microsoft/vscode-tslint/issues"
+	},
+	"categories": [
+		"Languages",
+		"Linters"
+	],
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"activationEvents": [
+		"onLanguage:typescript",
+		"onLanguage:typescriptreact"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "TSLint configuration",
+			"properties": {
+				"tslint.enable": {
+					"type": "boolean",
+					"default": true,
+					"description": "Control whether tslint is enabled for TypeScript files or not."
+				},
+				"tslint.rulesDirectory": {
+					"type": "string",
+					"description": "An additional rules directory",
+					"default": null
+				},
+				"tslint.configFile": {
+					"type": "string",
+					"description": "The path to the rules configuration file",
+					"default": null
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "cd ../tslint-server && npm run compile && cd ../tslint && tsc -p ./",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"vscode": "0.10.x",
+		"typescript": "^1.6.2"
+	},
+	"dependencies": {
+		"vscode-languageclient": "0.10.x"
+	}
+}
