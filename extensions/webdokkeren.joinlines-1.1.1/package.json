@@ -1,0 +1,62 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "d5b6246b-b8cd-434e-8227-a206c8fdfaa7",
+		"downloadUrl": "https://webdokkeren.gallery.vsassets.io/_apis/public/gallery/publisher/webdokkeren/extension/joinlines/1.1.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+		"publisherId": "1ddb5b46-ad63-411c-a748-66a6f6d60a35",
+		"publisherDisplayName": "webdokkeren",
+		"date": "2016-01-06T17:52:49.507Z"
+	},
+	"name": "joinlines",
+	"displayName": "JoinLines",
+	"description": "Adds join lines command (ctrl+j / cmd+j) known from Sublime Text to VS Code",
+	"galleryBanner": {
+		"color": "#2F312E",
+		"theme": "dark"
+	},
+	"version": "1.1.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/webdokkeren/vscode-join-lines"
+	},
+	"publisher": "webdokkeren",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:joinLines.joinLines"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "joinLines.joinLines",
+				"title": "Join lines"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "joinLines.joinLines",
+				"key": "Ctrl+j"
+			},
+			{
+				"command": "joinLines.joinLines",
+				"key": "cmd+j"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"devDependencies": {
+		"typescript": "^1.6.2",
+		"vscode": "0.10.x"
+	},
+	"dependencies": {
+		"lodash": "^3.10.1"
+	}
+}

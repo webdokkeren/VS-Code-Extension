@@ -1,0 +1,67 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "00518570-772b-4ccb-8b06-d056f3f556e0",
+		"downloadUrl": "https://tyriar.gallery.vsassets.io/_apis/public/gallery/publisher/Tyriar/extension/sort-lines/1.0.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+		"publisherId": "738ff3bb-8e77-45d5-bd26-7c9ad62959b9",
+		"publisherDisplayName": "Daniel Imms",
+		"date": "2015-11-18T06:55:15.567Z"
+	},
+	"name": "sort-lines",
+	"displayName": "Sort lines",
+	"description": "Sorts lines of text",
+	"version": "1.0.1",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Tyriar/vscode-sort-lines/issues"
+	},
+	"scripts": {
+		"test": "mocha"
+	},
+	"homepage": "https://github.com/Tyriar/vscode-sort-lines/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Tyriar/vscode-sort-lines"
+	},
+	"publisher": "Tyriar",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:sortLines.sortLines",
+		"onCommand:sortLines.sortLinesReverse",
+		"onCommand:sortLines.sortLinesCaseInsensitive"
+	],
+	"main": "./lib/main",
+	"contributes": {
+		"commands": [
+			{
+				"command": "sortLines.sortLines",
+				"title": "Sort lines"
+			},
+			{
+				"command": "sortLines.sortLinesReverse",
+				"title": "Sort lines (reverse)"
+			},
+			{
+				"command": "sortLines.sortLinesCaseInsensitive",
+				"title": "Sort lines (case insensitive)"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "sortLines.sortLines",
+				"key": "f9",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"devDependencies": {
+		"vscode": "0.10.x",
+		"mocha": "~2.3.3"
+	},
+	"icon": "images/icon.png"
+}
