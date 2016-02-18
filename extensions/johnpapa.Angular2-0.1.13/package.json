@@ -1,0 +1,39 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "214cbfb9-7c06-4467-bad4-357ae83eb587",
+		"downloadUrl": "https://johnpapa.gallery.vsassets.io/_apis/public/gallery/publisher/johnpapa/extension/Angular2/0.1.13/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+		"publisherId": "4434843a-4ebf-4f44-84f5-4176380c492d",
+		"publisherDisplayName": "johnpapa",
+		"date": "2015-12-28T19:21:56.8Z"
+	},
+	"name": "Angular2",
+	"publisher": "johnpapa",
+	"displayName": "Angular 2 TypeScript Snippets",
+	"description": "Angular 2 TypeScript snippets",
+	"icon": "images/angular-shield.png",
+	"galleryBanner": {
+		"color": "#0273D4",
+		"theme": "dark"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/johnpapa/vscode-angular2-snippets.git"
+	},
+	"version": "0.1.13",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "typescript",
+				"path": "./snippets/typescript.json"
+			}
+		]
+	}
+}

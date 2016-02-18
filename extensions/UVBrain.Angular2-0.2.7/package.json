@@ -1,0 +1,49 @@
+{
+	"__metadata": {
+		"galleryApiUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"id": "4e2d44a1-45d8-4f74-9e96-158c4c51ccc4",
+		"downloadUrl": "https://uvbrain.gallery.vsassets.io/_apis/public/gallery/publisher/UVBrain/extension/Angular2/0.2.7/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?install=true",
+		"publisherId": "e2248ff8-ae7a-4029-b435-d1cac8cf64e1",
+		"publisherDisplayName": "Balram",
+		"date": "2015-12-25T03:44:17.247Z"
+	},
+	"name": "Angular2",
+	"publisher": "UVBrain",
+	"displayName": "Angular2 TypeScript with HTML directives Snippets",
+	"description": "Angular2 (All API keywords) Beta0 version+ Typescript(ES6) + HTML fequently used snippets. Component, Directives, Service, NgFor, NgIf and other Html Directives",
+	"public": true,
+	"icon": "images/angular-shield.png",
+	"galleryBanner": {
+		"color": "#0273D4",
+		"theme": "dark"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"bugs": {
+		"url": "https://github.com/ultrasonicsoft/vscode-ng2-typescript-snippets/issues",
+		"email": "uvbrainsolutions@outlook.com"
+	},
+	"homepage": "https://github.com/ultrasonicsoft/vscode-ng2-typescript-snippets/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ultrasonicsoft/vscode-ng2-typescript-snippets.git"
+	},
+	"version": "0.2.7",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./html.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./typescript.json"
+			}
+		]
+	}
+}
